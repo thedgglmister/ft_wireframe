@@ -35,7 +35,7 @@ The Project is written in C and in accordance with "The Norm".
    
 #### --Flag Usage--
 
-    ./fdf [-T | -C [hex >= 0]] [-W [int > 0]] file
+    ./wireframe [-T | -C [hex >= 0]] [-W [int > 0]] file
        -T --transparent
        -C --fill_color
        -W --window_size
