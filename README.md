@@ -41,4 +41,4 @@ The Project is written in C and in accordance with "The Norm".
        -W --window_size
       
 <img src="/images/volcano.png" width="500">
-<img srcs="/images/42.png" width="400">
+<img src="/images/42.png" width="400">
