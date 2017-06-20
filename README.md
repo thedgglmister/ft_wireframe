@@ -7,7 +7,7 @@ ft_wireframe is a wireframe renderer that can display 3D wireframe models in col
 ### --Coding Style--
 At 42, we follow a strict norm in order to teach us to follow style guides. This norm also prevents us from using many built-in functions. In this project, we are limited to using a barebones graphic library called minilibx. This library limits the functionality to creating windows, handling input hooks, and coloring specific pixels.
 
-The allowed functions are : exit, open, close, write, read, malloc, free, and the functions of minilibx.
+The allowed functions are : ```exit, open, close, write, read, malloc, free, and the functions of minilibx and math.h```.
 
 The Project is written in C and in accordance with "The Norm".
 
