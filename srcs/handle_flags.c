@@ -43,7 +43,7 @@ void	ft_handle_flags(t_params *params, char **av, int ac)
 
 int		ft_usage(void)
 {
-	ft_putendl("usage: fdf [-T | -C [hex >= 0]] [-W [int > 0]] file");
+	ft_putendl("usage: ./wireframe [-T | -C [hex >= 0]] [-W [int > 0]] file");
 	ft_putendl("       -T --transparent");
 	ft_putendl("       -C --fill_color");
 	ft_putendl("       -W --window_size");
