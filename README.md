@@ -40,5 +40,5 @@ The Project is written in C and in accordance with "The Norm".
        -C --fill_color
        -W --window_size
       
-<img src="/images/volcano.png" width="500">
-<img src="/images/42.png" width="400">
+<img src="/images/volcano.png" width="800">
+<img src="/images/42.png" width="600">
