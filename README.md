@@ -1,5 +1,5 @@
 # ft_wireframe
-The 1st project of the 42us graphics branch
+The 1st project of the 42 Silicon Valley graphics branch
 
 ### --Project Description--
 ft_wireframe is a wireframe renderer that can display 3D wireframe models in color and with the option of hidden surface removal. The coordinates and colors of vertices are specified in an input file, points are transformed using an isometric projection, and then Bresenham's line drawing and rasterization algorithms are used to draw pixels. Additonally, the model can be rotated, translated, and dilated using key controls. Hidden surface removal is accomplished using a z-buffer and can be optionally disabled using the -T flag.
@@ -18,7 +18,7 @@ The Project is written in C and in accordance with "The Norm".
     • One single variable declaration per line; cannot stick declaration and initialisation on the same line
     • No more than 5 variables per bloc
     • No more than 4 parameters per function
-    • Forbidden functions are: [for] [do ... while] [switch] [case] [goto]
+    • Forbidden keywords are: [for] [do ... while] [switch] [case] [goto]
     
 ### --Demo Instructions (Mac OSX Sierra)--
 
