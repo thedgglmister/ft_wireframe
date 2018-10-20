@@ -25,7 +25,7 @@ The Project is written in C and in accordance with "The Norm".
     • Open Terminal and run the following commands:
     • git clone https://github.com/thedigglemister/ft_wireframe ft_wireframe
     • cd ft_wireframe
-    • make && ./wireframe maps/volcano.fdf
+    • make && ./ft_wireframe maps/volcano.fdf
 
 #### --User Controls--
     • Left/Right arrows rotate about models y-axis, Up/Down arrows rotate about models x-axis
