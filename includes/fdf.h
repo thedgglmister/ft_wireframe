@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #ifndef FDF_H
-
 # define FDF_H
 
 # include "libft.h"
@@ -22,79 +21,83 @@
 # define ABS(x) (x < 0 ? -x : x)
 # define TO_RAD(x) ((double) x * M_PI / 180)
 
-typedef struct	s_rgb
-{
-	int red;
-	int green;
-	int blue;
-}				t_rgb;
+// Forward declarations
+typedef struct s_params t_params;
+typedef struct s_line t_line;
 
-typedef struct	s_point
+typedef struct  s_rgb
 {
-	int x;
-	int y;
-	int z;
-	int c;
-}				t_point;
+    int red;
+    int green;
+    int blue;
+}               t_rgb;
 
-typedef struct	s_line
+typedef struct  s_point
 {
-	t_point p1;
-	t_point p2;
-	int		dx;
-	int		absx;
-	int		dy;
-	int		dz;
-	double	orig_z;
-	double	z_step;
-	int		oct;
-	int		d;
-	int		x_inc;
-	void	(*bres)();
-	int		*grad;
-	int		g_cnt;
-	int		on_left;
-	int		mono;
-	int		pre;
-}				t_line;
+    int x;
+    int y;
+    int z;
+    int c;
+}               t_point;
 
-typedef struct	s_events
+typedef struct  s_line
 {
-	int o_zoom;
-	int i_zoom;
-	int cc_xrot;
-	int c_xrot;
-	int c_zrot;
-	int cc_zrot;
-	int down;
-	int up;
-	int right;
-	int left;
-}				t_events;
+    t_point p1;
+    t_point p2;
+    int     dx;
+    int     absx;
+    int     dy;
+    int     dz;
+    double  orig_z;
+    double  z_step;
+    int     oct;
+    int     d;
+    int     x_inc;
+    void    (*bres)(t_params *params, t_line *l); // Corrected function pointer
+    int     *grad;
+    int     g_cnt;
+    int     on_left;
+    int     mono;
+    int     pre;
+}               t_line;
 
-typedef struct	s_params
+typedef struct  s_events
 {
-	void		*mlx;
-	void		*win;
-	void		*img;
-	char		*img_str;
-	t_point		***map;
-	int			map_l;
-	int			map_w;
-	double		scalar;
-	int			x_o_shift;
-	int			y_o_shift;
-	double		x_shift;
-	double		y_shift;
-	double		z_rads;
-	double		x_rads;
-	int			**z_buf;
-	int			hidden;
-	int			w_s;
-	int			fill_color;
-	int			spin;
-	t_events	events;
-}				t_params;
+    int o_zoom;
+    int i_zoom;
+    int cc_xrot;
+    int c_xrot;
+    int c_zrot;
+    int cc_zrot;
+    int down;
+    int up;
+    int right;
+    int left;
+}               t_events;
+
+typedef struct  s_params
+{
+    void        *mlx;
+    void        *win;
+    void        *img;
+    char        *img_str;
+    t_point     ***map;
+    int         map_l;
+    int         map_w;
+    double      scalar;
+    int         x_o_shift;
+    int         y_o_shift;
+    double      x_shift;
+    double      y_shift;
+    double      z_rads;
+    double      x_rads;
+    int         **z_buf;
+    int         hidden;
+    int         w_s;
+    int         fill_color;
+    int         spin;
+    t_events    events;
+}               t_params;
 
 /*
 **main.c

@@ -53,7 +53,17 @@ void	ft_delete_gradients(t_line *a, t_line *b, t_line *c)
 
 int		ft_get_octant(int dx, int dy, int absx)
 {
-	if (dx < 0 && absx >= dy)
+	if (dy < 0) {
+		if (dx < 0 && absx >= dy)
+			return (4);
+		else if (dx < 0 && absx < dy)
+			return (5);
+		else if (dx >= 0 && absx < dy)
+			return (6);
+		else
+			return (7);
+	} else {
+		if (dx < 0 && absx >= dy)
 		return (4);
 	else if (dx < 0 && absx < dy)
 		return (5);
@@ -61,6 +71,7 @@ int		ft_get_octant(int dx, int dy, int absx)
 		return (6);
 	else
 		return (7);
+	}
 }
 
 void	ft_order_points(t_point *p1, t_point *p2, t_point *p3)
